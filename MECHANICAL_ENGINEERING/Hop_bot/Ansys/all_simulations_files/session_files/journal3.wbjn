@@ -1,0 +1,186 @@
+# encoding: utf-8
+# 2021 R2
+SetScriptVersion(Version="21.2.209")
+system1 = GetSystem(Name="SYS")
+model1 = system1.GetContainer(ComponentName="Model")
+model1.Edit()
+engineeringData1 = system1.GetContainer(ComponentName="Engineering Data")
+material1 = engineeringData1.GetMaterial(Name="Structural Steel")
+material1.Delete()
+modelComponent1 = system1.GetComponent(Name="Model")
+modelComponent1.Update(AllDependencies=True)
+modelComponent1.Update(AllDependencies=True)
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+geometry1.Edit(IsSpaceClaimGeometry=True)
+geometry1.Exit()
+modelComponent1.Refresh()
+model1.Edit()
+template1 = GetTemplate(
+    TemplateName="Static Structural",
+    Solver="ANSYS")
+system2 = template1.CreateSystem(
+    Position="Right",
+    RelativeTo=system1)
+favorites1 = EngData.LoadFavoriteItems()
+library1 = EngData.CreateLibrary(
+    Name="3D FILAMENT",
+    FilePath="C:/Users/lenovo/OneDrive/Desktop/MECH 491/Ansys/datasource.xml")
+library2 = EngData.OpenLibrary(
+    Name="3D FILAMENT",
+    Source="C:/Users/lenovo/OneDrive/Desktop/MECH 491/Ansys/datasource.xml")
+matl1 = library2.CreateMaterial(Name="PLA FILAMENT")
+library2.Save()
+EngData.EnableFilter(Enable=False)
+matlProp1 = matl1.CreateProperty(
+    Name="Density",
+    Qualifiers={"Definition": "", "Behavior": ""})
+matlProp2 = matl1.CreateProperty(
+    Name="Coefficient of Thermal Expansion",
+    Definition="Secant",
+    Behavior="Isotropic",
+    Qualifiers={"Definition": "Secant", "Behavior": "Isotropic"})
+matlProp3 = matl1.CreateProperty(
+    Name="Elasticity",
+    Behavior="Isotropic",
+    Qualifiers={"Definition": "", "Behavior": "Isotropic"})
+matlProp4 = matl1.CreateProperty(
+    Name="Tensile Yield Strength",
+    Qualifiers={"Definition": "", "Behavior": ""})
+matlProp5 = matl1.CreateProperty(
+    Name="Tensile Ultimate Strength",
+    Qualifiers={"Definition": "", "Behavior": ""})
+matlProp6 = matl1.CreateProperty(
+    Name="Thermal Conductivity",
+    Behavior="Isotropic",
+    Qualifiers={"Definition": "", "Behavior": "Isotropic"})
+matlProp7 = matl1.CreateProperty(
+    Name="Specific Heat",
+    Definition="Constant Volume",
+    Qualifiers={"Definition": "Constant Volume", "Behavior": ""})
+matlProp7.Delete(Definition="Constant Volume")
+matlProp8 = matl1.CreateProperty(
+    Name="Enthalpy",
+    Qualifiers={"Definition": "", "Behavior": ""})
+matlProp8.Delete()
+matlProp1.SetData(
+    Index=-1,
+    Variables=["Density"],
+    Values=[["1250 [kg m^-3]"]])
+matlProp2.SetData(
+    SheetName="Coefficient of Thermal Expansion",
+    SheetQualifiers={"Definition": "Secant", "Behavior": "Isotropic"},
+    Index=-1,
+    Variables=["Coefficient of Thermal Expansion"],
+    Values=[["0.000135 [C^-1]"]])
+matlProp3.SetData(
+    Index=-1,
+    Variables=["Young's Modulus"],
+    Values=[["3450000000 [Pa]"]])
+matlProp3.SetData(
+    Variables=["Poisson's Ratio"],
+    Values=[["0.39"]])
+matlProp4.SetData(
+    Index=-1,
+    Variables=["Tensile Yield Strength"],
+    Values=[["54100000 [Pa]"]])
+matlProp5.SetData(
+    Index=-1,
+    Variables=["Tensile Ultimate Strength"],
+    Values=[["59200000 [Pa]"]])
+matlProp6.SetData(
+    Index=-1,
+    Variables=["Thermal Conductivity"],
+    Values=[["0.144 [W m^-1 C^-1]"]])
+library2.Save()
+geometry2 = system2.GetContainer(ComponentName="Geometry")
+geometry2.Edit(IsSpaceClaimGeometry=True)
+geometry2.Exit()
+geometry2.SetFile(FilePath="C:/Users/lenovo/OneDrive/Desktop/MECH 491/Stepfiles/update_follower.stp")
+library2.Save()
+engineeringData2 = system2.GetContainer(ComponentName="Engineering Data")
+matl2 = engineeringData2.ImportMaterial(
+    Name="PLA FILAMENT",
+    Source="C:/Users/lenovo/OneDrive/Desktop/MECH 491/Ansys/datasource.xml")
+material2 = engineeringData2.GetMaterial(Name="Structural Steel")
+material2.Delete()
+matl3 = engineeringData1.ImportMaterial(
+    Name="PLA FILAMENT",
+    Source="C:/Users/lenovo/OneDrive/Desktop/MECH 491/Ansys/datasource.xml")
+EngData.EnableFilter()
+EngData.EnableFilter(Enable=False)
+material3 = engineeringData1.GetMaterial(Name="Pla filament")
+material3.Delete()
+modelComponent2 = system2.GetComponent(Name="Model")
+modelComponent2.Refresh()
+model2 = system2.GetContainer(ComponentName="Model")
+model2.Edit()
+system3 = template1.CreateSystem(
+    Position="Right",
+    RelativeTo=system2)
+engineeringData3 = system3.GetContainer(ComponentName="Engineering Data")
+matl4 = engineeringData3.ImportMaterial(
+    Name="PLA FILAMENT",
+    Source="C:/Users/lenovo/OneDrive/Desktop/MECH 491/Ansys/datasource.xml")
+material4 = engineeringData3.GetMaterial(Name="Structural Steel")
+material4.Delete()
+matl4.SetSuppression(Suppressed=True)
+matl4.SetSuppression(Suppressed=False)
+EngData.EnableFilter()
+geometry3 = system3.GetContainer(ComponentName="Geometry")
+geometry3.Edit(IsSpaceClaimGeometry=True)
+model1.Exit()
+geometry1.SetFile(FilePath="C:/Users/lenovo/Downloads/cameren.stp")
+modelComponent1.Refresh()
+model1.Edit()
+geometry3.SetFile(FilePath="C:/Users/lenovo/OneDrive/Desktop/MECH 491/Stepfiles/update_follower.stp")
+modelComponent3 = system3.GetComponent(Name="Model")
+modelComponent3.Refresh()
+model3 = system3.GetContainer(ComponentName="Model")
+model3.Edit()
+model3.Exit()
+geometry3.SetFile(FilePath="C:/Users/lenovo/OneDrive/Desktop/MECH 491/Stepfiles/update_leg.stp")
+modelComponent3.Refresh()
+model3.Edit()
+model3.Exit()
+geometry3.SetFile(FilePath="C:/Users/lenovo/OneDrive/Desktop/MECH 491/Stepfiles/update_leg.stp")
+geometry3.SetFile(FilePath="C:/Users/lenovo/OneDrive/Desktop/MECH 491/Stepfiles/update_leg.stp")
+model3.Edit()
+modelComponent3.Update(AllDependencies=True)
+modelComponent3.UpdateUpstreamComponents()
+model3.Exit()
+geometry3.SetFile(FilePath="C:/Users/lenovo/OneDrive/Desktop/MECH 491/Stepfiles/update_leg.stp")
+geometry3.SetFile(FilePath="C:/Users/lenovo/OneDrive/Desktop/MECH 491/Stepfiles/update_leg.stp")
+modelComponent3.UpdateUpstreamComponents()
+geometryComponent1 = system3.GetComponent(Name="Geometry")
+geometryComponent1.Update(AllDependencies=True)
+modelComponent3.UpdateUpstreamComponents()
+system3.Delete()
+system4 = template1.CreateSystem(
+    Position="Right",
+    RelativeTo=system2)
+geometry4 = system4.GetContainer(ComponentName="Geometry")
+geometry4.SetFile(FilePath="C:/Users/lenovo/OneDrive/Desktop/MECH 491/Stepfiles/update_leg.stp")
+modelComponent4 = system4.GetComponent(Name="Model")
+modelComponent4.Refresh()
+model4 = system4.GetContainer(ComponentName="Model")
+model4.Edit()
+system5 = template1.CreateSystem(
+    Position="Right",
+    RelativeTo=system4)
+engineeringData4 = system5.GetContainer(ComponentName="Engineering Data")
+matl5 = engineeringData4.ImportMaterial(
+    Name="PLA FILAMENT",
+    Source="C:/Users/lenovo/OneDrive/Desktop/MECH 491/Ansys/datasource.xml")
+material5 = engineeringData4.GetMaterial(Name="Structural Steel")
+material5.SetSuppression(Suppressed=True)
+geometry5 = system5.GetContainer(ComponentName="Geometry")
+geometry5.SetFile(FilePath="C:/Users/lenovo/OneDrive/Desktop/MECH 491/Stepfiles/ansys_assembly.stp")
+modelComponent5 = system5.GetComponent(Name="Model")
+modelComponent5.Refresh()
+model5 = system5.GetContainer(ComponentName="Model")
+model5.Edit()
+model5.Exit()
+model1.Exit()
+model2.Exit()
+model4.Exit()
+Save(Overwrite=True)

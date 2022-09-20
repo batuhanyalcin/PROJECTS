@@ -1,0 +1,245 @@
+
+ Ansys Mechanical Enterprise Academic Student      
+
+
+ *------------------------------------------------------------------*
+ |                                                                  |
+ |   W E L C O M E   T O   T H E   A N S Y S (R)  P R O G R A M     |
+ |                                                                  |
+ *------------------------------------------------------------------*
+
+
+
+
+ ***************************************************************
+ *            ANSYS 2021 R2          LEGAL NOTICES             *
+ ***************************************************************
+ *                                                             *
+ * Copyright 1971-2021 ANSYS, Inc.  All rights reserved.       *
+ * Unauthorized use, distribution or duplication is            *
+ * prohibited.                                                 *
+ *                                                             *
+ * Ansys is a registered trademark of ANSYS, Inc. or its       *
+ * subsidiaries in the United States or other countries.       *
+ * See the ANSYS, Inc. online documentation or the ANSYS, Inc. *
+ * documentation CD or online help for the complete Legal      *
+ * Notice.                                                     *
+ *                                                             *
+ ***************************************************************
+ *                                                             *
+ * THIS ANSYS SOFTWARE PRODUCT AND PROGRAM DOCUMENTATION       *
+ * INCLUDE TRADE SECRETS AND CONFIDENTIAL AND PROPRIETARY      *
+ * PRODUCTS OF ANSYS, INC., ITS SUBSIDIARIES, OR LICENSORS.    *
+ * The software products and documentation are furnished by    *
+ * ANSYS, Inc. or its subsidiaries under a software license    *
+ * agreement that contains provisions concerning               *
+ * non-disclosure, copying, length and nature of use,          *
+ * compliance with exporting laws, warranties, disclaimers,    *
+ * limitations of liability, and remedies, and other           *
+ * provisions.  The software products and documentation may be *
+ * used, disclosed, transferred, or copied only in accordance  *
+ * with the terms and conditions of that software license      *
+ * agreement.                                                  *
+ *                                                             *
+ * ANSYS, Inc. is a UL registered                              *
+ * ISO 9001:2015 company.                                      *
+ *                                                             *
+ ***************************************************************
+ *                                                             *
+ * This product is subject to U.S. laws governing export and   *
+ * re-export.                                                  *
+ *                                                             *
+ * For U.S. Government users, except as specifically granted   *
+ * by the ANSYS, Inc. software license agreement, the use,     *
+ * duplication, or disclosure by the United States Government  *
+ * is subject to restrictions stated in the ANSYS, Inc.        *
+ * software license agreement and FAR 12.212 (for non-DOD      *
+ * licenses).                                                  *
+ *                                                             *
+ ***************************************************************
+
+ 2021 R2 
+     
+ Point Releases and Patches installed:   
+     
+ Academic Student 2021 R2
+ Aqwa 2021 R2
+ EnSight 2021 R2 
+ FENSAP-ICE 2021 R2  
+
+
+          *****  ANSYS COMMAND LINE ARGUMENTS  *****
+  BATCH MODE REQUESTED (-b)    = NOLIST
+  INPUT FILE COPY MODE (-c)    = COPY
+  DISTRIBUTED MEMORY PARALLEL REQUESTED
+       2 PARALLEL PROCESSES REQUESTED WITH SINGLE THREAD PER PROCESS
+    TOTAL OF     2 CORES REQUESTED
+  INPUT FILE NAME              = C:\Users\lenovo\OneDrive\Desktop\MECH 491\Ansys\_ProjectScratch\ScrB0C4\dummy.dat
+  OUTPUT FILE NAME             = C:\Users\lenovo\OneDrive\Desktop\MECH 491\Ansys\_ProjectScratch\ScrB0C4\solve.out
+  START-UP FILE MODE           = NOREAD
+  STOP FILE MODE               = NOREAD
+
+ RELEASE= 2021 R2              BUILD= 21.2      UP20210601   VERSION=WINDOWS x64 
+ CURRENT JOBNAME=file0  21:26:34  NOV 30, 2021 CP=      0.141
+
+
+ PARAMETER _DS_PROGRESS =     999.0000000    
+
+ /INPUT FILE= ds.dat  LINE=       0
+
+
+
+ *** NOTE ***                            CP =       0.297   TIME= 21:26:34
+ The /CONFIG,NOELDB command is not valid in a Distributed ANSYS          
+ solution.  Command is ignored.                                          
+
+ *GET  _WALLSTRT  FROM  ACTI  ITEM=TIME WALL  VALUE=  21.4427778    
+
+ TITLE= 
+ cam_analays--Static Structural (D5)                                           
+
+  ACT Extensions:
+      LSDYNA, 2021.1
+      5f463412-bd3e-484b-87e7-cbc0a665e474, wbex
+  
+
+ SET PARAMETER DIMENSIONS ON  _WB_PROJECTSCRATCH_DIR
+  TYPE=STRI  DIMENSIONS=      248        1        1
+
+ PARAMETER _WB_PROJECTSCRATCH_DIR(1) = C:\Users\lenovo\OneDrive\Desktop\MECH 491\Ansys\_ProjectScratch\ScrB0C4\
+
+ SET PARAMETER DIMENSIONS ON  _WB_SOLVERFILES_DIR
+  TYPE=STRI  DIMENSIONS=      248        1        1
+
+ PARAMETER _WB_SOLVERFILES_DIR(1) = C:\Users\lenovo\OneDrive\Desktop\MECH 491\Ansys\cam_analays_files\dp0\SYS-3\MECH\
+
+ SET PARAMETER DIMENSIONS ON  _WB_USERFILES_DIR
+  TYPE=STRI  DIMENSIONS=      248        1        1
+
+ PARAMETER _WB_USERFILES_DIR(1) = C:\Users\lenovo\OneDrive\Desktop\MECH 491\Ansys\cam_analays_files\user_files\
+ --- Data in consistent MKS units. See Solving Units in the help system for more
+
+ MKS UNITS SPECIFIED FOR INTERNAL    
+  LENGTH        (l)  = METER (M)
+  MASS          (M)  = KILOGRAM (KG)
+  TIME          (t)  = SECOND (SEC)
+  TEMPERATURE   (T)  = CELSIUS (C)
+  TOFFSET            = 273.0
+  CHARGE        (Q)  = COULOMB
+  FORCE         (f)  = NEWTON (N) (KG-M/SEC2)
+  HEAT               = JOULE (N-M)
+
+  PRESSURE           = PASCAL (NEWTON/M**2)
+  ENERGY        (W)  = JOULE (N-M)
+  POWER         (P)  = WATT (N-M/SEC)
+  CURRENT       (i)  = AMPERE (COULOMBS/SEC)
+  CAPACITANCE   (C)  = FARAD
+  INDUCTANCE    (L)  = HENRY
+  MAGNETIC FLUX      = WEBER
+  RESISTANCE    (R)  = OHM
+  ELECTRIC POTENTIAL = VOLT
+
+ INPUT  UNITS ARE ALSO SET TO MKS 
+
+ *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2021 R2          21.2     ***
+ DISTRIBUTED Ansys Mechanical Enterprise Academic Student      
+
+ 00000000  VERSION=WINDOWS x64   21:26:34  NOV 30, 2021 CP=      0.297
+
+ cam_analays--Static Structural (D5)                                           
+
+
+
+          ***** ANSYS ANALYSIS DEFINITION (PREP7) *****
+ *********** Nodes for the whole assembly ***********
+ *********** Elements for Body 1 "Servo Motor MG996R  With Attachments_x_t|attac
+ *********** Elements for Body 2 "Servo Motor MG996R  With Attachments_x_t|servo
+ *********** Elements for Body 3 "Servo Motor MG996R  With Attachments_x_t|servo
+ *********** Elements for Body 4 "Servo Motor MG996R  With Attachments_x_t|servo
+ *********** Elements for Body 5 "Servo Motor MG996R  With Attachments_x_t|servo
+ *********** Elements for Body 6 "-MR623ZZ-assem_sldasm|mr623zz-cen_sldasm|solid
+ *********** Elements for Body 7 "-MR623ZZ-assem_sldasm|mr623zz-int_sldasm|solid
+ *********** Elements for Body 8 "-MR623ZZ-assem_sldasm|mr623zz-ext_sldasm|solid
+ *********** Elements for Body 9 "-MR623ZZ-assem_sldasm|mr623zz-cen_sldasm|solid
+ *********** Elements for Body 10 "kutu3|kutu3" ***********
+ *********** Elements for Body 11 "update_leg|update_leg" ***********
+ *********** Elements for Body 12 "cameren|cameren" ***********
+ *********** Elements for Body 13 "update_follower|update_follower" ***********
+
+ *** FATAL ***                           CP =       4.750   TIME= 21:26:37
+ The version size limits( NODES )have been exceeded.                     
+  Contact your Ansys support person for more information.                
+
+ ************************************************************************
+ The above error is non-recoverable by ANSYS                             
+  ANSYS run terminated by the indicated error                            
+  Current data base saved if possible.                                   
+ ************************************************************************
+
++--------- D I S T R I B U T E D   A N S Y S   S T A T I S T I C S ------------+
+
+Release: 2021 R2            Build: 21.2       Update: UP20210601   Platform: WINDOWS x64 
+Date Run: 11/30/2021   Time: 21:26     Process ID: 25748
+Operating System: Windows 10  (Build: 22000)
+
+Processor Model: Intel(R) Core(TM) i5-8300H CPU @ 2.30GHz
+
+Compiler: Intel(R) FORTRAN Compiler Version 19.0.0  (Build: 20190206)
+          Intel(R) C/C++ Compiler Version 19.0.0  (Build: 20190206)
+          Intel(R) Math Kernel Library Version 2020.0.0 Product Build 20191125
+          BLAS Library supplied by Intel(R) MKL
+ 
+Number of processes requested           :    2
+Number of threads per process requested :    1
+Total number of cores requested         :    2 (Distributed Memory Parallel)               
+MPI Type: INTELMPI
+MPI Version: Intel(R) MPI Library 2019 Update 9 for Windows* OS
+
+
+GPU Acceleration: Not Requested
+
+Job Name: file
+Input File: dummy.dat
+
+  Core                Machine Name   Working Directory
+ -----------------------------------------------------
+     0             DESKTOP-PU4U5DI   C:\Users\lenovo\OneDrive\Desktop\MECH 491\Ansys\_ProjectScratch\ScrB0C4
+     1             DESKTOP-PU4U5DI   C:\Users\lenovo\OneDrive\Desktop\MECH 491\Ansys\_ProjectScratch\ScrB0C4
+ 
+Latency time from master to core     1 =    3.076 microseconds
+ 
+Communication speed from master to core     1 =  3201.10 MB/sec
+
+Total CPU time for main thread                    :        3.4 seconds
+Total CPU time summed for all threads             :        5.0 seconds
+
+Elapsed time spent obtaining a license            :        0.4 seconds
+Elapsed time spent pre-processing model (/PREP7)  :        0.0 seconds
+Elapsed time spent solution - preprocessing       :        0.0 seconds
+Elapsed time spent computing solution             :        0.0 seconds
+Elapsed time spent solution - postprocessing      :        0.0 seconds
+Elapsed time spent post-processing model (/POST1) :        0.0 seconds
+ 
+
++------ E N D   D I S T R I B U T E D   A N S Y S   S T A T I S T I C S -------+
+
+
+ *---------------------------------------------------------------------------*
+ |                                                                           |
+ |                       DISTRIBUTED ANSYS RUN COMPLETED                     |
+ |                                                                           |
+ |---------------------------------------------------------------------------|
+ |                                                                           |
+ | Ansys 2021 R2               Build 21.2         UP20210601     WINDOWS x64 |
+ |                                                                           |
+ |---------------------------------------------------------------------------|
+ |                                                                           |
+ | Database Requested(-db)  1024 MB    Scratch Memory Requested      1024 MB |
+ | Maximum Database Used     157 MB    Maximum Scratch Memory Used     14 MB |
+ |                                                                           |
+ |---------------------------------------------------------------------------|
+ |                                                                           |
+ |        CP Time      (sec) =          4.969       Time  =  21:26:37        |
+ |        Elapsed Time (sec) =          5.000       Date  =  11/30/2021      |
+ |                                                                           |
+ *---------------------------------------------------------------------------*

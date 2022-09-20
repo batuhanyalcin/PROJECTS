@@ -1,0 +1,32 @@
+/COM,ANSYS RELEASE 2020 R2           BUILD 20.2      UP20200601       22:44:09
+
+ *** WARNING ***                         CP =       0.500   TIME= 22:44:10
+ Element shape checking is currently inactive.  Issue SHPP,ON or         
+ SHPP,WARN to reactivate, if desired.                                    
+
+ *** WARNING ***                         CP =       0.531   TIME= 22:44:10
+ Material number 2 (used by element 11741) should normally have at least 
+ one MP or one TB type command associated with it.  Output of energy by  
+ material may not be available.                                          
+
+ *** WARNING ***                         CP =       2.844   TIME= 22:44:12
+ Fewer modes than the requested number of modes ( 200 ) were computed.   
+ The range specified (FREQB= 0, FREQE= 2110) contains only 21 modes.     
+
+ *** WARNING ***                         CP =       2.875   TIME= 22:44:12
+ Material number 2 (used by element 11741) should normally have at least 
+ one MP or one TB type command associated with it.  Output of energy by  
+ material may not be available.                                          
+
+ *** WARNING ***                         CP =       7.047   TIME= 22:44:16
+ To avoid duplication when using the LVSCALE command, delete all loads   
+ unless already deleted.                                                 
+
+ *** WARNING ***                         CP =       7.078   TIME= 22:44:16
+ Element shape checking is currently inactive.  Issue SHPP,ON or         
+ SHPP,WARN to reactivate, if desired.                                    
+
+ *** WARNING ***                         CP =       7.109   TIME= 22:44:16
+ Material number 2 (used by element 11741) should normally have at least 
+ one MP or one TB type command associated with it.  Output of energy by  
+ material may not be available.                                          

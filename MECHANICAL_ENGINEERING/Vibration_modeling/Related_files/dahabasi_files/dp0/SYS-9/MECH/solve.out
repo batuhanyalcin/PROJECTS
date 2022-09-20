@@ -1,0 +1,1046 @@
+
+ ANSYS Academic Teaching Introductory              
+
+
+ *------------------------------------------------------------------*
+ |                                                                  |
+ |   W E L C O M E   T O   T H E   A N S Y S (R)  P R O G R A M     |
+ |                                                                  |
+ *------------------------------------------------------------------*
+
+
+
+
+ ***************************************************************
+ *            ANSYS 2020 R2          LEGAL NOTICES             *
+ ***************************************************************
+ *                                                             *
+ * Copyright 1971-2020 ANSYS, Inc.  All rights reserved.       *
+ * Unauthorized use, distribution or duplication is            *
+ * prohibited.                                                 *
+ *                                                             *
+ * Ansys is a registered trademark of ANSYS, Inc. or its       *
+ * subsidiaries in the United States or other countries.       *
+ * See the ANSYS, Inc. online documentation or the ANSYS, Inc. *
+ * documentation CD or online help for the complete Legal      *
+ * Notice.                                                     *
+ *                                                             *
+ ***************************************************************
+ *                                                             *
+ * THIS ANSYS SOFTWARE PRODUCT AND PROGRAM DOCUMENTATION       *
+ * INCLUDE TRADE SECRETS AND CONFIDENTIAL AND PROPRIETARY      *
+ * PRODUCTS OF ANSYS, INC., ITS SUBSIDIARIES, OR LICENSORS.    *
+ * The software products and documentation are furnished by    *
+ * ANSYS, Inc. or its subsidiaries under a software license    *
+ * agreement that contains provisions concerning               *
+ * non-disclosure, copying, length and nature of use,          *
+ * compliance with exporting laws, warranties, disclaimers,    *
+ * limitations of liability, and remedies, and other           *
+ * provisions.  The software products and documentation may be *
+ * used, disclosed, transferred, or copied only in accordance  *
+ * with the terms and conditions of that software license      *
+ * agreement.                                                  *
+ *                                                             *
+ * ANSYS, Inc. is a UL registered                              *
+ * ISO 9001:2015 company.                                      *
+ *                                                             *
+ ***************************************************************
+ *                                                             *
+ * This product is subject to U.S. laws governing export and   *
+ * re-export.                                                  *
+ *                                                             *
+ * For U.S. Government users, except as specifically granted   *
+ * by the ANSYS, Inc. software license agreement, the use,     *
+ * duplication, or disclosure by the United States Government  *
+ * is subject to restrictions stated in the ANSYS, Inc.        *
+ * software license agreement and FAR 12.212 (for non-DOD      *
+ * licenses).                                                  *
+ *                                                             *
+ ***************************************************************
+
+ 2020 R2 
+     
+ Point Releases and Patches installed:   
+     
+ Academic Student 2020 R2
+ Aqwa 2020 R2
+ EnSight 2020 R2 
+ FENSAP-ICE 2020 R2  
+
+
+          *****  ANSYS COMMAND LINE ARGUMENTS  *****
+  BATCH MODE REQUESTED (-b)    = NOLIST
+  INPUT FILE COPY MODE (-c)    = COPY
+  DISTRIBUTED MEMORY PARALLEL REQUESTED
+       2 PARALLEL PROCESSES REQUESTED WITH SINGLE THREAD PER PROCESS
+    TOTAL OF     2 CORES REQUESTED
+  DESIGNXPLORER REQUESTED
+  INPUT FILE NAME              = C:\Users\lenovo\OneDrive\Desktop\mech411\Project\_ProjectScratch\Scr8688\dummy.dat
+  OUTPUT FILE NAME             = C:\Users\lenovo\OneDrive\Desktop\mech411\Project\_ProjectScratch\Scr8688\solve.out
+  START-UP FILE MODE           = NOREAD
+  STOP FILE MODE               = NOREAD
+
+ RELEASE= 2020 R2              BUILD= 20.2      UP20200601   VERSION=WINDOWS x64 
+ CURRENT JOBNAME=file0  02:04:43  JAN 21, 2021 CP=      0.297
+
+
+ PARAMETER _DS_PROGRESS =     999.0000000    
+
+ /INPUT FILE= ds.dat  LINE=       0
+
+
+
+ *** NOTE ***                            CP =       0.391   TIME= 02:04:43
+ The /CONFIG,NOELDB command is not valid in a Distributed ANSYS          
+ solution.  Command is ignored.                                          
+
+ *GET  _WALLSTRT  FROM  ACTI  ITEM=TIME WALL  VALUE=  2.07861111    
+
+ TITLE= 
+ dahabasi--Harmonic Response (I5)                                              
+
+
+ SET PARAMETER DIMENSIONS ON  _WB_PROJECTSCRATCH_DIR
+  TYPE=STRI  DIMENSIONS=      248        1        1
+
+ PARAMETER _WB_PROJECTSCRATCH_DIR(1) = C:\Users\lenovo\OneDrive\Desktop\mech411\Project\_ProjectScratch\Scr8688\
+
+ SET PARAMETER DIMENSIONS ON  _WB_SOLVERFILES_DIR
+  TYPE=STRI  DIMENSIONS=      248        1        1
+
+ PARAMETER _WB_SOLVERFILES_DIR(1) = C:\Users\lenovo\OneDrive\Desktop\mech411\Project\dahabasi_files\dp0\SYS-9\MECH\
+
+ SET PARAMETER DIMENSIONS ON  _WB_USERFILES_DIR
+  TYPE=STRI  DIMENSIONS=      248        1        1
+
+ PARAMETER _WB_USERFILES_DIR(1) = C:\Users\lenovo\OneDrive\Desktop\mech411\Project\dahabasi_files\user_files\
+ --- Data in consistent NMM units. See Solving Units in the help system for more
+
+ MPA UNITS SPECIFIED FOR INTERNAL    
+  LENGTH      = MILLIMETERS (mm)
+  MASS        = TONNE (Mg)
+  TIME        = SECONDS (sec)
+  TEMPERATURE = CELSIUS (C)
+  TOFFSET     = 273.0
+  FORCE       = NEWTON (N)
+  HEAT        = MILLIJOULES (mJ)
+
+ INPUT  UNITS ARE ALSO SET TO MPA 
+
+ *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2020 R2          20.2     ***
+ DISTRIBUTED ANSYS Academic Teaching Introductory              
+
+ 01055371  VERSION=WINDOWS x64   02:04:43  JAN 21, 2021 CP=      0.391
+
+ dahabasi--Harmonic Response (I5)                                              
+
+
+
+          ***** ANSYS ANALYSIS DEFINITION (PREP7) *****
+ *********** Nodes for the whole assembly ***********
+ *********** Elements for Body 1 "c6-FreeParts|model2" ***********
+ *********** Send User Defined Coordinate System(s) ***********
+ *********** Set Reference Temperature ***********
+ *********** Send Materials ***********
+ *********** Fixed Supports ***********
+ *********** Define Force Using Surface Effect Elements ***********
+
+
+ ***** ROUTINE COMPLETED *****  CP =         0.516
+
+
+ --- Number of total nodes = 16289
+ --- Number of contact elements = 705
+ --- Number of spring elements = 0
+ --- Number of bearing elements = 0
+ --- Number of solid elements = 8456
+ --- Number of condensed parts = 0
+ --- Number of total elements = 9161
+
+ *GET  _WALLBSOL  FROM  ACTI  ITEM=TIME WALL  VALUE=  2.07861111    
+ *********** Performing Modal Solve ***********
+
+ *****  ANSYS SOLUTION ROUTINE  *****
+
+
+ PERFORM A MODAL ANALYSIS
+  THIS WILL BE A NEW ANALYSIS
+ MODE ANALYSIS MULTIPLE LOAD STEP IS ON
+
+ THERMAL STRAINS ARE NOT INCLUDED IN THE LOAD VECTOR.
+
+
+ EXPAND ALL EXTRACTED MODES
+  CALCULATE ELEMENT RESULTS AND NODAL DOF SOLUTION
+  CALCULATE STRESSES IN ANY DOWNSTREAM MODE SUPERPOSITION EXPANSION PASS
+
+ ERASE THE CURRENT DATABASE OUTPUT CONTROL TABLE.
+
+
+ WRITE ALL  ITEMS TO THE DATABASE WITH A FREQUENCY OF NONE
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE NSOL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE EANG ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE ETMP ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE VENG ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE STRS ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE EPEL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE RSOL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE CONT ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+
+ USE SYM. BLOCK LANCZOS MODE EXTRACTION METHOD
+  EXTRACT   200 MODES
+  EXTRACT FREQUENCIES IN THE RANGE   0.0000     TO   302.00    
+  NORMALIZE THE MODE SHAPES TO THE MASS MATRIX
+
+ DELETE ALL SPECIFIED NODAL LOADS FROM NODE         1 TO     16289 BY       1
+
+ NUMBER OF NODAL LOADS DELETED=       0
+
+ ACEL=    0.0000      0.0000      0.0000    
+ *********** Setting and Solving Each Load Step ***********
+
+ SELECT       FOR ITEM=TYPE COMPONENT=    
+  IN RANGE         2 TO          2 STEP          1
+
+        705  ELEMENTS (OF       9161  DEFINED) SELECTED BY  ESEL  COMMAND.
+
+ SELECT      ALL NODES HAVING ANY ELEMENT IN ELEMENT SET.
+
+       1723 NODES (OF      16289  DEFINED) SELECTED FROM
+      705 SELECTED ELEMENTS BY NSLE COMMAND.
+
+ SPECIFIED SURFACE LOAD PRES FOR ALL SELECTED ELEMENTS  LKEY =  3   KVAL = 1
+     VALUES =     1.0000         1.0000         1.0000         1.0000    
+
+ ALL SELECT   FOR ITEM=NODE COMPONENT=    
+  IN RANGE         1 TO      16289 STEP          1
+
+      16289  NODES (OF      16289  DEFINED) SELECTED BY NSEL  COMMAND.
+
+ ALL SELECT   FOR ITEM=ELEM COMPONENT=    
+  IN RANGE         1 TO      13835 STEP          1
+
+       9161  ELEMENTS (OF       9161  DEFINED) SELECTED BY  ESEL  COMMAND.
+
+ *** NOTE ***                            CP =       0.547   TIME= 02:04:43
+ The automatic domain decomposition logic has selected the MESH domain   
+ decomposition method with 2 processes per solution.                     
+
+ *****  ANSYS SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =       0.547   TIME= 02:04:43
+ Element shape checking is currently inactive.  Issue SHPP,ON or         
+ SHPP,WARN to reactivate, if desired.                                    
+
+ *** NOTE ***                            CP =       0.547   TIME= 02:04:43
+ The model data was checked and warning messages were found.             
+  Please review output or errors file (                                  
+ C:\Users\lenovo\OneDrive\Desktop\mech411\Project\_ProjectScratch\Scr868 
+ 88\file0.err ) for these warning messages.                              
+
+ *** SELECTION OF ELEMENT TECHNOLOGIES FOR APPLICABLE ELEMENTS ***
+      --- GIVE SUGGESTIONS AND RESET THE KEY OPTIONS ---
+
+ ELEMENT TYPE    1 IS SOLID187. IT IS NOT ASSOCIATED WITH FULLY INCOMPRESSIBLE
+ HYPERELASTIC MATERIALS. NO SUGGESTION IS AVAILABLE AND NO RESETTING IS NEEDED.
+
+
+
+ *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2020 R2          20.2     ***
+ DISTRIBUTED ANSYS Academic Teaching Introductory              
+
+ 01055371  VERSION=WINDOWS x64   02:04:43  JAN 21, 2021 CP=      0.578
+
+ dahabasi--Harmonic Response (I5)                                              
+
+
+
+                       S O L U T I O N   O P T I O N S
+
+   PROBLEM DIMENSIONALITY. . . . . . . . . . . . .3-D                  
+   DEGREES OF FREEDOM. . . . . . UX   UY   UZ  
+   ANALYSIS TYPE . . . . . . . . . . . . . . . . .MODAL                
+      EXTRACTION METHOD. . . . . . . . . . . . . .BLOCK LANCZOS
+   OFFSET TEMPERATURE FROM ABSOLUTE ZERO . . . . .  273.15    
+   THERMAL EXPANSION . . . . . . . . . . . . . . .OFF
+   NUMBER OF MODES TO EXTRACT. . . . . . . . . . .   200
+   MODAL EXTRACTION RANGE. . . . . . . . . . . . .  0.0000     TO   302.00    
+   GLOBALLY ASSEMBLED MATRIX . . . . . . . . . . .SYMMETRIC  
+   NUMBER OF MODES TO EXPAND . . . . . . . . . . .ALL
+   ELEMENT RESULTS CALCULATION . . . . . . . . . .ON 
+
+ *** WARNING ***                         CP =       0.578   TIME= 02:04:43
+ Material number 2 (used by element 13131) should normally have at least 
+ one MP or one TB type command associated with it.  Output of energy by  
+ material may not be available.                                          
+
+ *** NOTE ***                            CP =       0.578   TIME= 02:04:43
+ The step data was checked and warning messages were found.              
+  Please review output or errors file (                                  
+ C:\Users\lenovo\OneDrive\Desktop\mech411\Project\_ProjectScratch\Scr868 
+ 88\file0.err ) for these warning messages.                              
+
+ *** NOTE ***                            CP =       0.578   TIME= 02:04:43
+ The conditions for direct assembly have been met.  No .emat or .erot    
+ files will be produced.                                                 
+
+  
+  
+     D I S T R I B U T E D   D O M A I N   D E C O M P O S E R
+  
+  ...Number of elements: 9161
+  ...Number of nodes:    16289
+  ...Decompose to 2 CPU domains
+  ...Element load balance ratio =     1.001
+
+
+                      L O A D   S T E P   O P T I O N S
+
+   LOAD STEP NUMBER. . . . . . . . . . . . . . . .     1
+   THERMAL STRAINS INCLUDED IN THE LOAD VECTOR . .    NO
+   PRINT OUTPUT CONTROLS . . . . . . . . . . . . .NO PRINTOUT
+   DATABASE OUTPUT CONTROLS
+      ITEM     FREQUENCY   COMPONENT
+       ALL       NONE               
+      NSOL        ALL               
+      EANG        ALL               
+      ETMP        ALL               
+      VENG        ALL               
+      STRS        ALL               
+      EPEL        ALL               
+      RSOL        ALL               
+      CONT        ALL               
+
+
+
+                         ***********  PRECISE MASS SUMMARY  ***********
+
+   TOTAL RIGID BODY MASS MATRIX ABOUT ORIGIN
+               Translational mass               |   Coupled translational/rotational mass
+        0.73633E-01    0.0000        0.0000     |     0.0000        3.9934      -0.82893E-02
+         0.0000       0.73633E-01    0.0000     |    -3.9934        0.0000      -0.13373E-02
+         0.0000        0.0000       0.73633E-01 |    0.82893E-02   0.13373E-02    0.0000    
+     ------------------------------------------ | ------------------------------------------
+                                                |         Rotational mass (inertia)
+                                                |     1052.8      -0.63769       0.68376E-01
+                                                |   -0.63769        1053.6      -0.49087    
+                                                |    0.68376E-01  -0.49087        1502.0    
+
+   TOTAL MASS = 0.73633E-01
+     The mass principal axes coincide with the global Cartesian axes
+
+   CENTER OF MASS (X,Y,Z)=  -0.18162E-01   0.11258        54.234    
+
+   TOTAL INERTIA ABOUT CENTER OF MASS
+         836.21      -0.63784      -0.41521E-02
+       -0.63784        837.06      -0.41306E-01
+       -0.41521E-02  -0.41306E-01    1502.0    
+     The inertia principal axes coincide with the global Cartesian axes
+
+
+  *** MASS SUMMARY BY ELEMENT TYPE ***
+
+  TYPE      MASS
+     1  0.736326E-01
+
+ Range of element maximum matrix coefficients in global coordinates
+ Maximum = 17945562.9 at element 1999.                                   
+ Minimum = 464815.182 at element 392.                                    
+
+   *** ELEMENT MATRIX FORMULATION TIMES
+     TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
+
+        1      8456  SOLID187      0.562   0.000067
+        2       705  SURF154       0.047   0.000066
+ Time at end of element matrix formulation CP = 1.140625.                
+
+  BLOCK LANCZOS CALCULATION OF UP TO   200 EIGENVECTORS.
+  NUMBER OF EQUATIONS              =        48453
+  MAXIMUM WAVEFRONT                =          291
+  MAXIMUM MODES STORED             =          200
+  MINIMUM EIGENVALUE               =  0.00000E+00
+  MAXIMUM EIGENVALUE               =  0.30200E+03
+
+
+  Local memory allocated for solver              =    104.935 MB
+  Local memory required for in-core solution     =    100.024 MB
+  Local memory required for out-of-core solution =     41.658 MB
+
+  Total memory allocated for solver              =    200.043 MB
+  Total memory required for in-core solution     =    190.679 MB
+  Total memory required for out-of-core solution =     76.893 MB
+
+ *** NOTE ***                            CP =       2.031   TIME= 02:04:45
+ The Distributed Sparse Matrix Solver used by the Block Lanczos          
+ eigensolver is currently running in the in-core memory mode.  This      
+ memory mode uses the most amount of memory in order to avoid using the  
+ hard drive as much as possible, which most often results in the         
+ fastest solution time.  This mode is recommended if enough physical     
+ memory is present to accommodate all of the solver data.                
+
+ *** WARNING ***                         CP =       3.031   TIME= 02:04:46
+ Fewer modes than the requested number of modes ( 200 ) were computed.   
+ The range specified (FREQB= 0, FREQE= 302) contains only 6 modes.       
+
+ *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2020 R2          20.2     ***
+ DISTRIBUTED ANSYS Academic Teaching Introductory              
+
+ 01055371  VERSION=WINDOWS x64   02:04:46  JAN 21, 2021 CP=      3.031
+
+ dahabasi--Harmonic Response (I5)                                              
+
+
+
+ *** FREQUENCIES FROM BLOCK LANCZOS ITERATION ***
+
+  MODE    FREQUENCY (HERTZ)      
+
+
+
+   FREQUENCY RANGE REQUESTED=   0.00000       302.000    
+    1     212.7542524825    
+    2     214.0435582670    
+    3     214.3113539238    
+    4     214.6598522320    
+    5     214.8859555523    
+    6     215.0093676277    
+
+
+ *** ANSYS BINARY FILE STATISTICS
+  BUFFER SIZE USED= 16384
+       15.938 MB WRITTEN ON ASSEMBLED MATRIX FILE: file0.full
+       12.000 MB WRITTEN ON MODAL MATRIX FILE: file0.mode
+        1.625 MB WRITTEN ON RESULTS FILE: file0.rst
+ **********************
+ *************** Write FE CONNECTORS *********
+
+ WRITE OUT CONSTRAINT EQUATIONS TO FILE= file.ce                                                                                                                                                                                                                                                             
+
+ *****  ANSYS FINI     COMMAND  *****
+
+ *** WARNING ***                         CP =       3.078   TIME= 02:04:46
+ Material number 2 (used by element 13131) should normally have at least 
+ one MP or one TB type command associated with it.  Output of energy by  
+ material may not be available.                                          
+
+ *** NOTE ***                            CP =       3.094   TIME= 02:04:46
+ The step data was checked and warning messages were found.              
+  Please review output or errors file (                                  
+ C:\Users\lenovo\OneDrive\Desktop\mech411\Project\_ProjectScratch\Scr868 
+ 88\file0.err ) for these warning messages.                              
+
+ *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2020 R2          20.2     ***
+ DISTRIBUTED ANSYS Academic Teaching Introductory              
+
+ 01055371  VERSION=WINDOWS x64   02:04:46  JAN 21, 2021 CP=      3.094
+
+ dahabasi--Harmonic Response (I5)                                              
+
+
+
+
+   *** ELEMENT RESULT CALCULATION TIMES
+     TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
+
+        1      8456  SOLID187      0.359   0.000042
+        2       705  SURF154       0.016   0.000022
+
+   *** NODAL LOAD CALCULATION TIMES
+     TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
+
+        1      8456  SOLID187      0.000   0.000000
+        2       705  SURF154       0.016   0.000022
+
+ *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2020 R2          20.2     ***
+ DISTRIBUTED ANSYS Academic Teaching Introductory              
+
+ 01055371  VERSION=WINDOWS x64   02:04:47  JAN 21, 2021 CP=      4.281
+
+ dahabasi--Harmonic Response (I5)                                              
+
+
+
+
+
+          ***** PARTICIPATION FACTOR CALCULATION *****  X  DIRECTION
+                                                                                  CUMULATIVE     RATIO EFF.MASS
+  MODE   FREQUENCY       PERIOD      PARTIC.FACTOR     RATIO    EFFECTIVE MASS   MASS FRACTION   TO TOTAL MASS
+     1     212.754       0.47003E-02   0.15441E-02    0.051172    0.238414E-05    0.186354E-02    0.323788E-04
+     2     214.044       0.46719E-02  -0.17735E-01    0.587750    0.314517E-03    0.247702        0.427144E-02
+     3     214.311       0.46661E-02   0.30174E-01    1.000000    0.910455E-03    0.959351        0.123648E-01
+     4     214.660       0.46585E-02   0.64867E-02    0.214979    0.420775E-04    0.992240        0.571453E-03
+     5     214.886       0.46536E-02   0.29616E-02    0.098151    0.877104E-05    0.999096        0.119119E-03
+     6     215.009       0.46510E-02  -0.10755E-02    0.035644    0.115672E-05     1.00000        0.157094E-04
+ -----------------------------------------------------------------------------------------------------------------
+   sum                                                            0.127936E-02                    0.173749E-01
+ -----------------------------------------------------------------------------------------------------------------
+
+
+
+          ***** PARTICIPATION FACTOR CALCULATION *****  Y  DIRECTION
+                                                                                  CUMULATIVE     RATIO EFF.MASS
+  MODE   FREQUENCY       PERIOD      PARTIC.FACTOR     RATIO    EFFECTIVE MASS   MASS FRACTION   TO TOTAL MASS
+     1     212.754       0.47003E-02   0.18993E-03    0.006249    0.360726E-07    0.282658E-04    0.489900E-06
+     2     214.044       0.46719E-02   0.30392E-01    1.000000    0.923692E-03    0.723816        0.125446E-01
+     3     214.311       0.46661E-02   0.16619E-01    0.546826    0.276201E-03    0.940242        0.375107E-02
+     4     214.660       0.46585E-02   0.21540E-02    0.070874    0.463986E-05    0.943878        0.630138E-04
+     5     214.886       0.46536E-02   0.44655E-02    0.146930    0.199410E-04    0.959503        0.270817E-03
+     6     215.009       0.46510E-02  -0.71890E-02    0.236539    0.516814E-04     1.00000        0.701882E-03
+ -----------------------------------------------------------------------------------------------------------------
+   sum                                                            0.127619E-02                    0.173319E-01
+ -----------------------------------------------------------------------------------------------------------------
+
+
+
+          ***** PARTICIPATION FACTOR CALCULATION *****  Z  DIRECTION
+                                                                                  CUMULATIVE     RATIO EFF.MASS
+  MODE   FREQUENCY       PERIOD      PARTIC.FACTOR     RATIO    EFFECTIVE MASS   MASS FRACTION   TO TOTAL MASS
+     1     212.754       0.47003E-02   0.59258E-01    1.000000    0.351147E-02    0.989172        0.476890E-01
+     2     214.044       0.46719E-02   0.86057E-03    0.014523    0.740580E-06    0.989381        0.100578E-04
+     3     214.311       0.46661E-02  -0.17395E-02    0.029356    0.302603E-05    0.990234        0.410963E-04
+     4     214.660       0.46585E-02  -0.46015E-02    0.077653    0.211740E-04    0.996198        0.287563E-03
+     5     214.886       0.46536E-02   0.34757E-02    0.058655    0.120808E-04    0.999601        0.164068E-03
+     6     215.009       0.46510E-02   0.11897E-02    0.020076    0.141532E-05     1.00000        0.192214E-04
+ -----------------------------------------------------------------------------------------------------------------
+   sum                                                            0.354990E-02                    0.482110E-01
+ -----------------------------------------------------------------------------------------------------------------
+
+
+
+          ***** PARTICIPATION FACTOR CALCULATION *****ROTX DIRECTION
+                                                                                  CUMULATIVE     RATIO EFF.MASS
+  MODE   FREQUENCY       PERIOD      PARTIC.FACTOR     RATIO    EFFECTIVE MASS   MASS FRACTION   TO TOTAL MASS
+     1     212.754       0.47003E-02   0.49633        0.047135    0.246340        0.192759E-02    0.233987E-03
+     2     214.044       0.46719E-02   -3.1180        0.296116     9.72220        0.780030E-01    0.923469E-02
+     3     214.311       0.46661E-02    10.530        1.000000     110.877        0.945603        0.105317    
+     4     214.660       0.46585E-02    2.1498        0.204167     4.62182        0.981769        0.439006E-02
+     5     214.886       0.46536E-02    1.2536        0.119048     1.57139        0.994065        0.149259E-02
+     6     215.009       0.46510E-02  -0.87093        0.082711    0.758524         1.00000        0.720489E-03
+ -----------------------------------------------------------------------------------------------------------------
+   sum                                                             127.797                        0.121389    
+ -----------------------------------------------------------------------------------------------------------------
+
+
+
+          ***** PARTICIPATION FACTOR CALCULATION *****ROTY DIRECTION
+                                                                                  CUMULATIVE     RATIO EFF.MASS
+  MODE   FREQUENCY       PERIOD      PARTIC.FACTOR     RATIO    EFFECTIVE MASS   MASS FRACTION   TO TOTAL MASS
+     1     212.754       0.47003E-02  -0.60340E-01    0.005647    0.364097E-02    0.284820E-04    0.345563E-05
+     2     214.044       0.46719E-02    10.686        1.000000     114.183        0.893242        0.108371    
+     3     214.311       0.46661E-02    2.7894        0.261041     7.78069        0.954107        0.738462E-02
+     4     214.660       0.46585E-02   0.15936        0.014913    0.253947E-01    0.954306        0.241020E-04
+     5     214.886       0.46536E-02    1.1435        0.107015     1.30764        0.964535        0.124108E-02
+     6     215.009       0.46510E-02   -2.1292        0.199260     4.53361         1.00000        0.430283E-02
+ -----------------------------------------------------------------------------------------------------------------
+   sum                                                             127.834                        0.121327    
+ -----------------------------------------------------------------------------------------------------------------
+
+
+
+          ***** PARTICIPATION FACTOR CALCULATION *****ROTZ DIRECTION
+                                                                                  CUMULATIVE     RATIO EFF.MASS
+  MODE   FREQUENCY       PERIOD      PARTIC.FACTOR     RATIO    EFFECTIVE MASS   MASS FRACTION   TO TOTAL MASS
+     1     212.754       0.47003E-02   -14.869        1.000000     221.098        0.989127        0.147198    
+     2     214.044       0.46719E-02  -0.22609        0.015205    0.511185E-01    0.989356        0.340325E-04
+     3     214.311       0.46661E-02   0.43707        0.029394    0.191028        0.990210        0.127178E-03
+     4     214.660       0.46585E-02    1.1558        0.077730     1.33586        0.996186        0.889357E-03
+     5     214.886       0.46536E-02  -0.87452        0.058814    0.764789        0.999608        0.509164E-03
+     6     215.009       0.46510E-02  -0.29605        0.019910    0.876478E-01     1.00000        0.583522E-04
+ -----------------------------------------------------------------------------------------------------------------
+   sum                                                             223.529                        0.148816    
+ -----------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+ *** NOTE ***                            CP =       4.281   TIME= 02:04:47
+ The modes requested are mass normalized (Nrmkey on MODOPT).  However,   
+ the modal masses and kinetic energies below are calculated with unit    
+ normalized modes.                                                       
+
+        ***** MODAL MASSES, KINETIC ENERGIES, AND TRANSLATIONAL EFFECTIVE MASSES SUMMARY *****
+
+                                                                         EFFECTIVE MASS
+  MODE  FREQUENCY   MODAL MASS     KENE      |      X-DIR      RATIO%   Y-DIR      RATIO%   Z-DIR      RATIO% 
+     1   212.8      0.3327E-02   2973.       |    0.2384E-05    0.00  0.3607E-07    0.00  0.3511E-02    4.77
+     2   214.0      0.1550E-02   1402.       |    0.3145E-03    0.43  0.9237E-03    1.25  0.7406E-06    0.00
+     3   214.3      0.1908E-02   1730.       |    0.9105E-03    1.24  0.2762E-03    0.38  0.3026E-05    0.00
+     4   214.7      0.2262E-02   2058.       |    0.4208E-04    0.06  0.4640E-05    0.01  0.2117E-04    0.03
+     5   214.9      0.1039E-02   947.4       |    0.8771E-05    0.01  0.1994E-04    0.03  0.1208E-04    0.02
+     6   215.0      0.1198E-02   1093.       |    0.1157E-05    0.00  0.5168E-04    0.07  0.1415E-05    0.00
+ --------------------------------------------------------------------------------------------------------------
+   sum                                       |    0.1279E-02    1.74  0.1276E-02    1.73  0.3550E-02    4.82
+ --------------------------------------------------------------------------------------------------------------
+
+
+ *** ANSYS BINARY FILE STATISTICS
+  BUFFER SIZE USED= 16384
+       15.938 MB WRITTEN ON ASSEMBLED MATRIX FILE: file0.full
+        1.688 MB WRITTEN ON MODAL MATRIX FILE: file0.mode
+       15.000 MB WRITTEN ON RESULTS FILE: file0.rst
+
+ FINISH SOLUTION PROCESSING
+
+ RESULTS WRITTEN TO FILE: file.mode
+    TOTAL SIZE =        3.125 MB
+
+ RESULTS WRITTEN TO FILE: file0.mode
+    TOTAL SIZE =        1.750 MB
+
+
+ ***** ROUTINE COMPLETED *****  CP =         4.625
+
+
+
+ *GET  _WALLASOL  FROM  ACTI  ITEM=TIME WALL  VALUE=  2.07972222    
+ *********** Performing MSUP Harmonic Solve ***********
+
+ *****  ANSYS SOLUTION ROUTINE  *****
+
+
+ PERFORM A HARMONIC ANALYSIS
+  THIS WILL BE A NEW ANALYSIS
+
+ *** NOTE ***                            CP =       4.625   TIME= 02:04:47
+ Some analysis options have been reset to their defaults.  Please verify 
+ current settings or respecify as required.                              
+
+
+ PERFORM A MODE SUPERPOSITION HARMONIC RESPONSE ANALYSIS
+  USE ALL MODES FROM THE MODAL ANALYSIS TO CALCULATE THE RESPONSE
+
+ THERMAL STRAINS ARE NOT INCLUDED IN THE LOAD VECTOR.
+
+ PRINT COMPLEX DISPLACEMENTS AS AMPLITUDE AND PHASE ANGLE (IN DEGREES)
+  USE UNIFORM SPACING OF FREQUENCY SOLUTIONS
+  DO NOT PRINT MODE CONTRIBUTIONS AT EACH FREQUENCY
+
+ STEP BOUNDARY CONDITION KEY= 1
+
+ HARMONIC FREQUENCY RANGE - END=  151.00      BEGIN=  0.0000    
+
+ USE    10 SUBSTEP(S) THIS LOAD STEP FOR ALL  DEGREES OF FREEDOM
+
+ DELETE ALL SPECIFIED NODAL LOADS FROM NODE         1 TO     16289 BY       1
+
+ NUMBER OF NODAL LOADS DELETED=       0
+
+ DELETE SURFACE LOAD PRES ON SURFACE DEFINED BY ALL SELECTED NODES
+
+ NUMBER OF PRES SURFACE LOADS DELETED=       0
+
+ DELETE SPECIFIED SURFACE LOAD PRES FOR ALL SELECTED ELEMENTS- ALL LKEY
+
+ NUMBER OF PRES SURFACE LOADS DELETED=     705
+
+ ACEL=    0.0000      0.0000      0.0000    
+
+ THE SCALE FACTOR OF THE .MODE FILE LOAD VECTOR IN THE POSITION OF      1 IS   0.0000    
+ *********** Scaling Each Load Step for MSUP Solve ***********
+
+ THE SCALE FACTOR OF THE .MODE FILE LOAD VECTOR IN THE POSITION OF      1 IS SET ACCORDING TO TABLE PARAMETER _LOADVARI28Z                    
+
+ *** WARNING ***                         CP =       4.688   TIME= 02:04:47
+ To avoid duplication when using the LVSCALE command, delete all loads   
+ unless already deleted.                                                 
+
+ *GET  ANSINTER_  FROM  ACTI  ITEM=INT        VALUE=  0.00000000    
+
+ *IF  ANSINTER_                         ( =   0.00000     )  NE  
+      0                                 ( =   0.00000     )  THEN    
+
+ *ENDIF
+
+ *** NOTE ***                            CP =       4.688   TIME= 02:04:47
+ The automatic domain decomposition logic has selected the MESH domain   
+ decomposition method with 2 processes per solution.                     
+
+ *****  ANSYS SOLVE    COMMAND  *****
+
+ *** WARNING ***                         CP =       4.688   TIME= 02:04:47
+ Element shape checking is currently inactive.  Issue SHPP,ON or         
+ SHPP,WARN to reactivate, if desired.                                    
+
+ *** NOTE ***                            CP =       4.719   TIME= 02:04:47
+ The model data was checked and warning messages were found.             
+  Please review output or errors file (                                  
+ C:\Users\lenovo\OneDrive\Desktop\mech411\Project\_ProjectScratch\Scr868 
+ 88\file0.err ) for these warning messages.                              
+
+ *** SELECTION OF ELEMENT TECHNOLOGIES FOR APPLICABLE ELEMENTS ***
+      --- GIVE SUGGESTIONS AND RESET THE KEY OPTIONS ---
+
+ ELEMENT TYPE    1 IS SOLID187. IT IS NOT ASSOCIATED WITH FULLY INCOMPRESSIBLE
+ HYPERELASTIC MATERIALS. NO SUGGESTION IS AVAILABLE AND NO RESETTING IS NEEDED.
+
+
+
+ *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2020 R2          20.2     ***
+ DISTRIBUTED ANSYS Academic Teaching Introductory              
+
+ 01055371  VERSION=WINDOWS x64   02:04:47  JAN 21, 2021 CP=      4.719
+
+ dahabasi--Harmonic Response (I5)                                              
+
+
+
+                       S O L U T I O N   O P T I O N S
+
+   PROBLEM DIMENSIONALITY. . . . . . . . . . . . .3-D                  
+   DEGREES OF FREEDOM. . . . . . UX   UY   UZ  
+   ANALYSIS TYPE . . . . . . . . . . . . . . . . .HARMONIC             
+      SOLUTION METHOD. . . . . . . . . . . . . . .MODE SUPERPOSITION   
+   OFFSET TEMPERATURE FROM ABSOLUTE ZERO . . . . .  273.15    
+   THERMAL EXPANSION . . . . . . . . . . . . . . .OFF
+   NUMBER OF MODES USED FOR MODE SUPERPOSITION . .ALL
+   COMPLEX DISPLACEMENT PRINT OPTION . . . . . . .AMPLITUDE AND PHASE ANGLE
+   GLOBALLY ASSEMBLED MATRIX . . . . . . . . . . .SYMMETRIC  
+
+ *** WARNING ***                         CP =       4.750   TIME= 02:04:47
+ Material number 2 (used by element 13131) should normally have at least 
+ one MP or one TB type command associated with it.  Output of energy by  
+ material may not be available.                                          
+
+ *** NOTE ***                            CP =       4.750   TIME= 02:04:47
+ The step data was checked and warning messages were found.              
+  Please review output or errors file (                                  
+ C:\Users\lenovo\OneDrive\Desktop\mech411\Project\_ProjectScratch\Scr868 
+ 88\file0.err ) for these warning messages.                              
+
+ *** NOTE ***                            CP =       4.750   TIME= 02:04:47
+ The conditions for direct assembly have been met.  No .emat or .erot    
+ files will be produced.                                                 
+
+                      L O A D   S T E P   O P T I O N S
+
+   LOAD STEP NUMBER. . . . . . . . . . . . . . . .     1
+   FREQUENCY RANGE . . . . . . . . . . . . . . . .  0.0000     TO   151.00    
+   NUMBER OF SUBSTEPS. . . . . . . . . . . . . . .    10
+   STEP CHANGE BOUNDARY CONDITIONS . . . . . . . .   YES
+   SCALE FACTOR OF LOAD VECTOR      1 . . . . . . . ._LOADVARI28Z                    
+   REDUCED DISPLACEMENT PRINTOUT FREQUENCY . . . .     0
+   REDUCED DISPLACEMENT FILE WRITE FREQUENCY . . .     1
+
+
+ *** NOTE ***                            CP =       4.812   TIME= 02:04:47
+ The calculation of element results was not performed during the         
+ preceding modal analysis.  For more efficient calculation of element    
+ results in the expansion pass of this harmonic solution, it is          
+ recommended to first expand the modal solution (MXPAND,,,,YES) and      
+ then rerun this harmonic solution.                                      
+ Time at start of mode superposition harmonic analysis CP= 4.8125.       
+
+
+ FREQUENCIES USED FOR HARMONIC RESPONSE
+
+     1   212.754    
+     2   214.044    
+     3   214.311    
+     4   214.660    
+     5   214.886    
+     6   215.009    
+ Time at start of frequencies CP= 4.8125.                                
+
+
+ *** ANSYS BINARY FILE STATISTICS
+  BUFFER SIZE USED= 16384
+        0.312 MB WRITTEN ON REDUCED COMPLEX DISPLACEMENT FILE: file0.rfrq
+
+ FINISH SOLUTION PROCESSING
+
+
+ ***** ROUTINE COMPLETED *****  CP =         4.844
+
+
+
+ *GET  _WALLASOL  FROM  ACTI  ITEM=TIME WALL  VALUE=  2.08000000    
+
+ *****  ANSYS SOLUTION ROUTINE  *****
+
+
+ PERFORM AN EXPANSION PASS
+
+
+ USE 0 (REAL) AND 90 (IMAGINARY) DEGREES FOR PHASE ANGLES FOR EXPANSION PASS
+
+ ERASE THE CURRENT DATABASE OUTPUT CONTROL TABLE.
+
+
+ WRITE ALL  ITEMS TO THE DATABASE WITH A FREQUENCY OF NONE
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE NSOL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE EANG ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE ETMP ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE VENG ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE STRS ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE EPEL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE RSOL ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+ WRITE CONT ITEMS TO THE DATABASE WITH A FREQUENCY OF ALL 
+   FOR ALL APPLICABLE ENTITIES
+
+
+ EXPAND ALL SOLUTIONS
+  CALCULATE ELEMENT RESULTS AS WELL AS THE NODAL DOF SOLUTION
+
+ *GET  ANSINTER_  FROM  ACTI  ITEM=INT        VALUE=  0.00000000    
+
+ *IF  ANSINTER_                         ( =   0.00000     )  NE  
+      0                                 ( =   0.00000     )  THEN    
+
+ *ENDIF
+
+ *** NOTE ***                            CP =       4.844   TIME= 02:04:48
+ The automatic domain decomposition logic has selected the MESH domain   
+ decomposition method with 2 processes per solution.                     
+
+ *****  ANSYS SOLVE    COMMAND  *****
+
+ *** SELECTION OF ELEMENT TECHNOLOGIES FOR APPLICABLE ELEMENTS ***
+      --- GIVE SUGGESTIONS AND RESET THE KEY OPTIONS ---
+
+ ELEMENT TYPE    1 IS SOLID187. IT IS NOT ASSOCIATED WITH FULLY INCOMPRESSIBLE
+ HYPERELASTIC MATERIALS. NO SUGGESTION IS AVAILABLE AND NO RESETTING IS NEEDED.
+
+
+
+ *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2020 R2          20.2     ***
+ DISTRIBUTED ANSYS Academic Teaching Introductory              
+
+ 01055371  VERSION=WINDOWS x64   02:04:48  JAN 21, 2021 CP=      4.875
+
+ dahabasi--Harmonic Response (I5)                                              
+
+
+
+                       S O L U T I O N   O P T I O N S
+
+   PROBLEM DIMENSIONALITY. . . . . . . . . . . . .3-D                  
+   DEGREES OF FREEDOM. . . . . . UX   UY   UZ  
+   ANALYSIS TYPE . . . . . . . . . . . . . . . . .HARMONIC             
+      SOLUTION METHOD. . . . . . . . . . . . . . .MODE SUPERPOSITION   
+      EXPANSION PASS . . . . . . . . . . . . . . .ON
+   OFFSET TEMPERATURE FROM ABSOLUTE ZERO . . . . .  273.15    
+   THERMAL EXPANSION . . . . . . . . . . . . . . .OFF
+
+ *** NOTE ***                            CP =       4.875   TIME= 02:04:48
+ The conditions for direct assembly have been met.  No .emat or .erot    
+ files will be produced.                                                 
+
+                      L O A D   S T E P   O P T I O N S
+
+   LOAD STEP NUMBER. . . . . . . . . . . . . . . .     1
+   NUMBER OF SOLUTIONS TO BE EXPANDED. . . . . . .   ALL
+   ELEMENT RESULTS CALCULATION . . . . . . . . . .    ON
+   EXPAND BOTH REAL AND IMAGINARY SOLUTIONS. . . .   YES
+   PRINT OUTPUT CONTROLS . . . . . . . . . . . . .NO PRINTOUT
+   DATABASE OUTPUT CONTROLS
+      ITEM     FREQUENCY   COMPONENT
+       ALL       NONE               
+      NSOL        ALL               
+      EANG        ALL               
+      ETMP        ALL               
+      VENG        ALL               
+      STRS        ALL               
+      EPEL        ALL               
+      RSOL        ALL               
+      CONT        ALL               
+
+
+   *** ELEMENT RESULT CALCULATION TIMES
+     TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
+
+        1      8456  SOLID187      0.453   0.000054
+        2       705  SURF154       0.000   0.000000
+
+   *** NODAL LOAD CALCULATION TIMES
+     TYPE    NUMBER   ENAME      TOTAL CP  AVE CP
+
+        1      8456  SOLID187      0.219   0.000026
+        2       705  SURF154       0.000   0.000000
+
+
+ *** ANSYS BINARY FILE STATISTICS
+  BUFFER SIZE USED= 16384
+       23.688 MB WRITTEN ON RESULTS FILE: file0.rst
+ *************** Write FE CONNECTORS *********
+
+ WRITE OUT CONSTRAINT EQUATIONS TO FILE= file.ce                                                                                                                                                                                                                                                             
+
+ FINISH SOLUTION PROCESSING
+
+
+ ***** ROUTINE COMPLETED *****  CP =        10.625
+
+
+
+ *** ANSYS - ENGINEERING ANALYSIS SYSTEM  RELEASE 2020 R2          20.2     ***
+ DISTRIBUTED ANSYS Academic Teaching Introductory              
+
+ 01055371  VERSION=WINDOWS x64   02:04:53  JAN 21, 2021 CP=     10.625
+
+ dahabasi--Harmonic Response (I5)                                              
+
+
+
+          ***** ANSYS RESULTS INTERPRETATION (POST1) *****
+
+ *** NOTE ***                            CP =      10.625   TIME= 02:04:53
+ Reading results into the database (SET command) will update the current 
+ displacement and force boundary conditions in the database with the     
+ values from the results file for that load set.  Note that any          
+ subsequent solutions will use these values unless action is taken to    
+ either SAVE the current values or not overwrite them (/EXIT,NOSAVE).    
+
+ Set Encoding of XML File to:ISO-8859-1
+
+ Set Output of XML File to:
+     PARM,     ,     ,     ,     ,     ,     ,     ,     ,     ,     ,     ,
+         ,     ,     ,     ,     ,     ,     ,
+
+ DATABASE WRITTEN ON FILE  parm.xml                                                                                                                                                                                                                                                            
+
+ EXIT THE ANSYS POST1 DATABASE PROCESSOR
+
+
+ ***** ROUTINE COMPLETED *****  CP =        10.625
+
+
+
+ PRINTOUT RESUMED BY /GOP
+
+ *GET  _WALLDONE  FROM  ACTI  ITEM=TIME WALL  VALUE=  2.08138889    
+
+ PARAMETER _PREPTIME =     0.000000000    
+
+ PARAMETER _SOLVTIME =     5.000000000    
+
+ PARAMETER _POSTTIME =     5.000000000    
+
+ PARAMETER _TOTALTIM =     10.00000000    
+
+ *GET  _DLBRATIO  FROM  ACTI  ITEM=SOLU DLBR  VALUE=  1.00065502    
+
+ *GET  _COMBTIME  FROM  ACTI  ITEM=SOLU COMB  VALUE= 0.746025900    
+ --- Total number of nodes = 16289
+ --- Total number of elements = 9161
+ --- Element load balance ratio = 1.00065502
+ --- Time to combine distributed files = 0.7460259
+
+ EXIT ANSYS WITHOUT SAVING DATABASE
+
+
+ NUMBER OF WARNING MESSAGES ENCOUNTERED=          7
+ NUMBER OF ERROR   MESSAGES ENCOUNTERED=          0
+
++--------- D I S T R I B U T E D   A N S Y S   S T A T I S T I C S ------------+
+
+Release: 2020 R2            Build: 20.2       Update: UP20200601   Platform: WINDOWS x64 
+Date Run: 01/21/2021   Time: 02:04     Process ID: 6580
+Operating System: Windows 10  (Build: 18363)
+
+Processor Model: Intel(R) Core(TM) i5-8300H CPU @ 2.30GHz
+
+Compiler: Intel(R) FORTRAN Compiler Version 19.0.0  (Build: 20190206)
+          Intel(R) C/C++ Compiler Version 19.0.0  (Build: 20190206)
+          Intel(R) Math Kernel Library Version 2020.0.0 Product Build 20191125
+
+Number of machines requested            :    1
+Total number of cores available         :    8
+Number of physical cores available      :    4
+Number of processes requested           :    2
+Number of threads per process requested :    1
+Total number of cores requested         :    2 (Distributed Memory Parallel)               
+MPI Type: INTELMPI
+MPI Version: Intel(R) MPI Library 2018 Update 3 for Windows* OS
+
+
+GPU Acceleration: Not Requested
+
+Job Name: file0
+Input File: dummy.dat
+
+  Core                Machine Name   Working Directory
+ -----------------------------------------------------
+     0             DESKTOP-PU4U5DI   C:\Users\lenovo\OneDrive\Desktop\mech411\Project\_ProjectScratch\Scr8688
+     1             DESKTOP-PU4U5DI   C:\Users\lenovo\OneDrive\Desktop\mech411\Project\_ProjectScratch\Scr8688
+ 
+Latency time from master to core     1 =    2.338 microseconds
+ 
+Communication speed from master to core     1 =  3370.34 MB/sec
+
+Total CPU time for main thread                    :       10.3 seconds
+Total CPU time summed for all threads             :       10.7 seconds
+
+Elapsed time spent obtaining a license            :        0.7 seconds
+Elapsed time spent pre-processing model (/PREP7)  :        0.1 seconds
+Elapsed time spent solution - preprocessing       :        0.2 seconds
+Elapsed time spent computing solution             :        8.6 seconds
+Elapsed time spent solution - postprocessing      :        0.7 seconds
+Elapsed time spent post-processing model (/POST1) :        0.0 seconds
+ 
+Equation solver computational rate                :       29.6 Gflops
+Equation solver effective I/O rate                :       11.8 GB/sec
+
+Maximum total memory used                         :      651.0 MB
+Maximum total memory allocated                    :     3136.0 MB
+Total physical memory available                   :         16 GB
+
+Total amount of I/O written to disk               :        0.3 GB
+Total amount of I/O read from disk                :        0.4 GB
+
++------ E N D   D I S T R I B U T E D   A N S Y S   S T A T I S T I C S -------+
+
+
+ *---------------------------------------------------------------------------*
+ |                                                                           |
+ |                       DISTRIBUTED ANSYS RUN COMPLETED                     |
+ |                                                                           |
+ |---------------------------------------------------------------------------|
+ |                                                                           |
+ | Ansys 2020 R2               Build 20.2         UP20200601     WINDOWS x64 |
+ |                                                                           |
+ |---------------------------------------------------------------------------|
+ |                                                                           |
+ | Database Requested(-db)  1024 MB    Scratch Memory Requested      1024 MB |
+ | Maximum Database Used      10 MB    Maximum Scratch Memory Used    332 MB |
+ |                                                                           |
+ |---------------------------------------------------------------------------|
+ |                                                                           |
+ |        CP Time      (sec) =         10.734       Time  =  02:04:53        |
+ |        Elapsed Time (sec) =         12.000       Date  =  01/21/2021      |
+ |                                                                           |
+ *---------------------------------------------------------------------------*

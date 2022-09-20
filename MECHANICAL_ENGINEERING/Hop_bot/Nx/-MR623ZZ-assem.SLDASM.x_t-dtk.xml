@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="C:\Program Files\Siemens\NX\ugii\SWschema\dtk_xsl\dtk_183.xsl"?>
+<Log>
+<DtkApiVersion>183</DtkApiVersion>
+<DtkDllVersion>20180621</DtkDllVersion>
+<ProductMode>Psk</ProductMode>
+<InputFormat>SOLIDWORKS</InputFormat>
+<OutputFormat>PARASOLID</OutputFormat>
+<HealingFlag>0</HealingFlag>
+<ConfigFile>Error Loading Config File</ConfigFile>
+<FileName><![CDATA[C:\Users\erays\Desktop\-bearing mr623zz\-MR623ZZ-assem.SLDASM]]></FileName>
+<FileVersion>Official version for SolidWorks 2016 </FileVersion>
+<OutPutFileName><![CDATA[C:\Users\erays\Desktop\-bearing mr623zz\-MR623ZZ-assem.SLDASM.x_t]]></OutPutFileName>
+<OutPutFileSize>775472</OutPutFileSize>
+<bill_of_materials>
+<component_root><path><![CDATA[C:\Users\erays\Desktop\-bearing mr623zz\-MR623ZZ-assem.SLDASM]]></path><type>Assembly</type><name><![CDATA[-MR623ZZ-assem]]></name><status>dtkNoError</status><size>331272</size><unit>Millimeters</unit><version></version></component_root>
+<component><path><![CDATA[C:\Users\erays\Desktop\-bearing mr623zz\mr623zz-cen.SLDPRT]]></path><type>Part</type><quantity>2</quantity><name><![CDATA[mr623zz-cen]]></name><status>dtkNoError</status><size>574578</size><unit>Millimeters</unit><version></version></component>
+<component><path><![CDATA[C:\Users\erays\Desktop\-bearing mr623zz\mr623zz-ext.SLDPRT]]></path><type>Part</type><quantity>1</quantity><name><![CDATA[mr623zz-ext]]></name><status>dtkNoError</status><size>104145</size><unit>Millimeters</unit><version></version></component>
+<component><path><![CDATA[C:\Users\erays\Desktop\-bearing mr623zz\mr623zz-int.SLDPRT]]></path><type>Part</type><quantity>1</quantity><name><![CDATA[mr623zz-int]]></name><status>dtkNoError</status><size>127229</size><unit>Millimeters</unit><version></version></component>
+</bill_of_materials>
+<components_info>
+</components_info>
+<output_files_written>
+<file><path><![CDATA[C:\Users\erays\Desktop\-bearing mr623zz\-MR623ZZ-assem.SLDASM.x_t]]></path><size>775472</size></file>
+</output_files_written>
+<inventory_writer>
+<output_file>
+<path><![CDATA[C:\Users\erays\Desktop\-bearing mr623zz\-MR623ZZ-assem.SLDASM.x_t]]></path>
+<inventory>
+<entity><count>4</count><type>10 : ASSEMBLY</type></entity>
+<entity><count>10</count><type>11 : INSTANCE</type></entity>
+<entity><count>6</count><type>12 : BODY</type></entity>
+<entity><count>9</count><type>13 : SHELL</type></entity>
+<entity><count>393</count><type>14 : FACE</type></entity>
+<entity><count>436</count><type>15 : LOOP</type></entity>
+<entity><count>1059</count><type>16 : EDGE</type></entity>
+<entity><count>2118</count><type>17 : HALFEDGE</type></entity>
+<entity><count>679</count><type>18 : VERTEX</type></entity>
+<entity><count>9</count><type>19 : REGION</type></entity>
+<entity><count>679</count><type>29 : POINT</type></entity>
+<entity><count>156</count><type>50 : PLANE</type></entity>
+<entity><count>44</count><type>52 : CONE</type></entity>
+<entity><count>60</count><type>51 : CYLINDER</type></entity>
+<entity><count>87</count><type>54 : TORUS</type></entity>
+<entity><count>46</count><type>67 : SWEPT_SURF</type></entity>
+<entity><count>261</count><type>31 : CIRCLE</type></entity>
+<entity><count>418</count><type>30 : LINE</type></entity>
+<entity><count>48</count><type>32 : ELLIPSE</type></entity>
+<entity><count>240</count><type>38 : INTERSECTION</type></entity>
+<entity><count>92</count><type>35 : PARACURVE</type></entity>
+<entity><count>1629</count><type>DTK_PUBLICATION</type></entity>
+<entity><count>8483</count><type>TOTAL</type></entity>
+</inventory>
+</output_file>
+</inventory_writer>
+<information>
+<info><message><![CDATA[PsKernel version used:28.0.197]]></message><type><![CDATA[Version]]></type></info>
+<info><message><![CDATA[OK Find Schema : C:\Program Files\Siemens\NX\ugii\SWschema\sch_10004.s_t]]></message><type><![CDATA[Schema]]></type></info>
+</information>
+<Conversion>
+<Start>  13:02:28</Start>
+<End>  13:02:29</End>
+<Duration>1 sec</Duration>
+</Conversion>
+</Log>

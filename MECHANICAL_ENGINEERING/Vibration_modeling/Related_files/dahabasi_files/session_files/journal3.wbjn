@@ -1,0 +1,90 @@
+# encoding: utf-8
+# 2020 R2
+SetScriptVersion(Version="20.2.221")
+system1 = GetSystem(Name="SYS 2")
+modelComponent1 = system1.GetComponent(Name="Model")
+modelComponent1.Refresh()
+model1 = system1.GetContainer(ComponentName="Model")
+model1.Edit()
+system2 = GetSystem(Name="SYS 1")
+modelComponent2 = system2.GetComponent(Name="Model")
+modelComponent2.Refresh()
+model2 = system2.GetContainer(ComponentName="Model")
+model2.Edit()
+system3 = GetSystem(Name="SYS 5")
+engineeringDataComponent1 = system3.GetComponent(Name="Engineering Data")
+geometryComponent1 = system3.GetComponent(Name="Geometry")
+system4 = system3.Duplicate(
+    ComponentsToShare=[engineeringDataComponent1, geometryComponent1],
+    RelativeTo=system3)
+system4.Delete()
+template1 = GetTemplate(
+    TemplateName="Modal",
+    Solver="ANSYS")
+system5 = template1.CreateSystem()
+geometry1 = system5.GetContainer(ComponentName="Geometry")
+geometry1.SetFile(FilePath="C:/Users/lenovo/OneDrive/Desktop/mech411/Project/4blade.stp")
+modelComponent3 = system5.GetComponent(Name="Model")
+modelComponent3.Refresh()
+model3 = system5.GetContainer(ComponentName="Model")
+model3.Edit()
+template2 = GetTemplate(
+    TemplateName="Harmonic Response",
+    Solver="ANSYS")
+system6 = GetSystem(Name="SYS 3")
+engineeringDataComponent2 = system6.GetComponent(Name="Engineering Data")
+geometryComponent2 = system6.GetComponent(Name="Geometry")
+system7 = template2.CreateSystem(
+    ComponentsToShare=[engineeringDataComponent2, geometryComponent2],
+    Position="Right",
+    RelativeTo=system6)
+system8 = GetSystem(Name="SYS 4")
+engineeringDataComponent3 = system8.GetComponent(Name="Engineering Data")
+geometryComponent3 = system8.GetComponent(Name="Geometry")
+system9 = template2.CreateSystem(
+    ComponentsToShare=[engineeringDataComponent3, geometryComponent3],
+    Position="Right",
+    RelativeTo=system8)
+system10 = template2.CreateSystem(
+    ComponentsToShare=[engineeringDataComponent1, geometryComponent1],
+    Position="Right",
+    RelativeTo=system3)
+engineeringDataComponent4 = system5.GetComponent(Name="Engineering Data")
+geometryComponent4 = system5.GetComponent(Name="Geometry")
+system11 = template2.CreateSystem(
+    ComponentsToShare=[engineeringDataComponent4, geometryComponent4],
+    Position="Right",
+    RelativeTo=system5)
+modelComponent4 = system7.GetComponent(Name="Model")
+modelComponent4.Refresh()
+model4 = system7.GetContainer(ComponentName="Model")
+model4.Edit()
+modelComponent5 = system9.GetComponent(Name="Model")
+modelComponent5.Refresh()
+model5 = system9.GetContainer(ComponentName="Model")
+model5.Edit()
+model5.Exit()
+modelComponent6 = system10.GetComponent(Name="Model")
+modelComponent6.Refresh()
+model6 = system10.GetContainer(ComponentName="Model")
+model6.Edit()
+model5.Edit()
+model7 = system8.GetContainer(ComponentName="Model")
+model7.Edit()
+model6.Exit()
+system12 = template1.CreateSystem()
+geometry2 = system12.GetContainer(ComponentName="Geometry")
+geometry2.SetFile(FilePath="C:/Users/lenovo/OneDrive/Desktop/mech411/Project/7blade.stp")
+modelComponent7 = system12.GetComponent(Name="Model")
+modelComponent7.Refresh()
+model2.Exit()
+modelComponent7.Refresh()
+model3.Exit()
+model4.Exit()
+model5.Exit()
+modelComponent7.Refresh()
+geometry2.SetFile(FilePath="C:/Users/lenovo/OneDrive/Desktop/mech411/Project/7blade.stp")
+modelComponent7.Refresh()
+model7.Exit()
+model1.Exit()
+Save(Overwrite=True)

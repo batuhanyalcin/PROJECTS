@@ -1,0 +1,11 @@
+/COM,ANSYS RELEASE 2020 R2           BUILD 20.2      UP20200601       21:44:11
+
+ *** WARNING ***                         CP =       0.469   TIME= 21:44:12
+ Element shape checking is currently inactive.  Issue SHPP,ON or         
+ SHPP,WARN to reactivate, if desired.                                    
+
+ *** WARNING ***                         CP =       0.469   TIME= 21:44:12
+ Make sure that the rotating element component 1 (component name         
+ CM_ROTVE) is axisymmetric about the axis of spin defined by the         
+ CMOMEGA command to correctly account for the gyroscopic effect in the   
+ stationary reference frame (CORIOLIS, ON,,, ON).                        
