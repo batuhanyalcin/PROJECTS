@@ -1,0 +1,328 @@
+{% extends 'hospital/doctor_base.html' %}
+{% block content %}
+{%load static%}
+
+<head>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+  <style media="screen">
+    a:link {
+      text-decoration: none;
+    }
+
+    h6 {
+      text-align: center;
+    }
+
+    .row {
+      margin: 100px;
+    }
+  </style>
+
+<style>
+  .truncate {
+    width: 250px;   /* or whatever width you want */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+</style>
+
+
+
+
+
+
+
+
+</head>
+
+
+<div class="container">
+
+    <form  action="/search" method="get" style="margin-left:70%;" class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" name="query" id="query" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+ 
+
+  {% if patients %}
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h6 class="panel-title">Your Total Patient List</h6>
+    </div>
+    <table class="table table-hover" id="dev-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Profile Picture</th>
+          <th>Symptoms</th>
+          <th>Mobile</th>
+          <th>Address</th>
+
+        </tr>
+      </thead>
+      {% for p in patients %}
+      <tr class="patient-row" data-name="{{p.get_name}}" data-profile-pic="{{p.profile_pic.url}}" 
+          data-symptoms="{{p.symptoms}}" data-mobile="{{p.mobile}}" data-address="{{p.address}}">
+          <td  onclick="get_test_sreen(this)" >{{p.get_name}}</td>
+          <td> <img src="{% static p.profile_pic.url %}" alt="Profile Pic" height="40px" width="40px" /></td>
+          <td>{{p.symptoms}}</td>
+          <td>{{p.mobile}}</td>
+          <td>{{p.address}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+
+
+  </div>
+  {%else%}
+  <br><br><br>
+  <h4 style="text-align: center;color: red;">No Patient Found !!!</h4>
+  {% endif %}
+
+
+
+
+
+
+  
+
+
+
+</div>
+
+
+<div class="container" id="survey_r_div" style="visibility: hidden;">
+
+  <form  action="/search" method="get" style="margin-left:70%;" class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" name="query" id="query" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>
+  {% if patients %}
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h6 class="panel-title">Survey Results</h6>
+    </div>
+
+    <table class="table table-hover" id="test_results_table">
+      <thead>
+        <tr>
+          <!-- <th>ID</th> -->
+          <th>Survey Date</th>
+          <th>Functional Score</th>
+          <th>Physical Score</th>
+          <th>Emotional Score</th>
+          <th>Overall Score</th>
+          
+
+        </tr>
+      </thead>
+      {% for s_result in survey_results %}
+      <tr class="patient-row" data-name="{{p.get_name}}" data-profile-pic="{{p.profile_pic.url}}" 
+          data-symptoms="{{p.symptoms}}" data-mobile="{{p.mobile}}" data-address="{{p.address}}">
+          <!-- <td>{{s_result.patientid}}</td> -->
+          <td >{{s_result.surveydate}}</td>
+          <td>{{s_result.functionalscore}}</td>
+          <td>{{s_result.physicalscore}}</td>
+          <td>{{s_result.emotionalscore}}</td>
+          <td>{{s_result.overallscore}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+  {%else%}
+  <br><br><br>
+  <h4 style="text-align: center;color: red;">No Test Found !!!</h4>
+  {% endif %}
+
+
+</div>
+
+
+
+<div class="container" id="test_r_div" style="visibility: hidden;"> 
+
+  <form  action="/search" method="get" style="margin-left:70%;" class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" name="query" id="query" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form>
+  {% if patients %}
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h6 class="panel-title">Test Results</h6>
+    </div>
+
+    <table class="table table-hover" id="test_results_table">
+      <thead>
+        <tr>
+          <!-- <th>ID</th> -->
+          <th>Test Date</th>
+          <th>Path Length</th>
+          <th>Normalizedpath Length</th>
+          <th>Jerk</th>
+          <th>Mean Vel</th>
+          <th>accx</th>
+          <th>accz</th>
+          <th>Sway Area</th>
+
+
+          
+          
+
+        </tr>
+      </thead>
+      {% for test in test_results %}
+      
+      <tr class="patient-row" data-accx="{{test.accx|escapejs}}" data-accz="{{test.accz|escapejs}}" 
+          data-symptoms="{{p.symptoms}}" data-mobile="{{p.mobile}}" data-address="{{p.address}}">
+          <!-- <td >{{test.patientid}}</td> -->
+          <td >{{test.testdate}}</td>
+          <td>{{test.pathlength}}</td>
+          <td>{{test.normalizedpathlength}}</td>
+          <td>{{test.jerk}}</td>
+          <td>{{test.meanvel}}</td>
+          <td onclick="get_plot(event)" >{{test.accx|slice:":1"}}... ({{test.accx|length}} items)</td>
+          <td >{{test.accz|slice:":1"}}... ({{test.accz|length}} items)</td>
+          <td>{{test.swayarea}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+  {%else%}
+  <br><br><br>
+  <h4 style="text-align: center;color: red;">No Test Found !!!</h4>
+  {% endif %}
+
+
+</div>
+
+<div id="chartContainer" style="height: 370px; width: 100%;">
+  <canvas id="myChart"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+
+
+<script type="text/javascript">
+
+
+
+
+function get_test_sreen(element) {
+
+
+  alert(element.textContent+" Results are dowloading");
+  if (element.textContent == "Gökhan ") {
+    document.getElementById('test_r_div').style.visibility = "visible";
+    document.getElementById('survey_r_div').style.visibility = "visible";
+     } 
+  // var id;
+
+  //   if (element.textContent == "Batuhan Yalçın") {
+  //     id = 1;
+  //   } else {
+  //     id = 16;
+  //   }
+
+  // $('#test_r_div tbody tr').each(function() {
+  //   var ID = $(this).data('ID').toLowerCase();
+  //   alert(ID)
+    
+  //   // Show/hide rows based on the search query
+  //   if (ID.includes(id)) {
+  //     $(this).show();
+  //   } else {
+  //     $(this).hide();
+  //   }
+  // });
+
+
+  //   $('#result_r_div tbody tr').each(function() {
+  //     var ID = $(this).data('ID').toLowerCase();
+      
+  //     // Show/hide rows based on the search query
+  //     if (patientName.includes(id)) {
+  //       $(this).show();
+  //     } else {
+  //       $(this).hide();
+  //     }
+  //   });
+
+      
+  var link = document.createElement('a');
+  
+  // Set the href attribute to the file path of the Excel file
+  var pathto='static/results/'+element.textContent+'.csv';
+ 
+  link.href = pathto
+  
+  // Set the download attribute to specify the desired file name
+  link.download = element.textContent+'.xlsx';
+  
+  // Append the link to the document body
+  document.body.appendChild(link);
+  
+  // Trigger the click event to initiate the download
+  link.click();
+  
+  // Remove the link from the document body
+  document.body.removeChild(link);
+  
+
+}
+
+function get_plot(event) {
+    // get the target element
+    var element = event.target;
+
+    // get accx and accz values from the parent row
+    // get accx and accz values from the parent row
+    let accxString = $(element).closest('.patient-row').data('accx').replace(/\\u002D/g, '-');
+    let acczString = $(element).closest('.patient-row').data('accz').replace(/\\u002D/g, '-');
+
+    let accxArray = accxString.substring(1, accxString.length - 1).split(',');
+    let acczArray = acczString.substring(1, acczString.length - 1).split(',');
+
+    let accx = accxArray.map(x => parseFloat(x)).filter(x => !isNaN(x));
+    let accz = acczArray.map(x => parseFloat(x)).filter(x => !isNaN(x));
+
+
+    console.log("accx:", accx);
+    console.log("accz:", accz);
+    
+
+
+
+    // plot chart
+    let ctx = document.getElementById('myChart').getContext('2d');
+    new Chart(ctx, {
+    type: 'scatter',
+    data: {
+        datasets: [{
+            label: 'Sphagetti Curve',
+            data: accz.map((value, index) => ({x: value, y: accx[index]})),
+            borderColor: 'rgba(75, 192, 192, 1)',
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            x: {
+                type: 'linear',
+                beginAtZero: true
+            }
+        }
+    }
+});
+}
+</script>
+
+
+</script>
+
+{% endblock content %}
